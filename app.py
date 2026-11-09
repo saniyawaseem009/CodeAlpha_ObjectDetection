@@ -15,7 +15,6 @@ st.markdown("""
     .stApp {
         background: linear-gradient(135deg, #1e1e2f 0%, #121212 100%);
     }
-    
     /* Header styling */
     .header-container {
         background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
@@ -107,7 +106,7 @@ elif "Video" in mode:
             with st.spinner("Processing video..."):
                 cap = cv2.VideoCapture(tfile.name)
                 st_frame = st.empty()
-                
+
                 while cap.isOpened():
                     ret, frame = cap.read()
                     if not ret:
